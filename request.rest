@@ -1,0 +1,32 @@
+
+GET http://localhost:3000/posts 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTmFuZGUiLCJpYXQiOjE2NDUxMDAwMzgsImV4cCI6MTY0NTEwMDA1M30.M1cb0WxdEf0_UmYTEpTk6dC25D9TLM0-P94Fq1lGDV4
+
+###
+# DELETES A REFRESH TOKEN
+DELETE http://localhost:4000/logout
+Content-Type: application/json
+
+{
+    "token": "yJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTmFuZGUiLCJpYXQiOjE2NDUxMDAwMzh9.RU7-vhpL5ahWPc--xfp8B2ZK5_EJzJcv9Ge2qx2sdLo" //need to paste the refresh token here//
+}
+
+
+
+###
+
+POST http://localhost:4000/token
+Content-Type: application/json
+
+{
+    "token": "yJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTmFuZGUiLCJpYXQiOjE2NDUxMDAwMzh9.RU7-vhpL5ahWPc--xfp8B2ZK5_EJzJcv9Ge2qx2sdLo"
+}
+
+###
+
+POST http://localhost:4000/login 
+Content-Type: application/json
+
+{
+    "username": "Nande"
+}
